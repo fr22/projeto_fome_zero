@@ -154,7 +154,7 @@ with st.container():
             st.markdown('#### Erro! Mude os valores dos parâmetros!')
         else:
             st.metric(label = f"{dfr['cuisines']}: {dfr['restaurant_name']}",
-                     value = f'{dfr['aggregate_rating']:.2f}/5',
+                     value = f"{dfr['aggregate_rating']:.2f}/5",
                      help = f"""País: {dfr['country_code']}\n
 Cidade: {dfr['city']}\n
 Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
@@ -169,7 +169,7 @@ Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
             st.markdown('#### Erro! Mude os valores dos parâmetros!')
         else:
             st.metric(label = f"{dfr['cuisines']}: {dfr['restaurant_name']}",
-                     value = f'{dfr['aggregate_rating']:.2f}/5',
+                     value = f"{dfr['aggregate_rating']:.2f}/5",
                      help = f"""País: {dfr['country_code']}\n
 Cidade: {dfr['city']}\n
 Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
@@ -185,7 +185,7 @@ Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
             st.markdown('#### Erro! Mude os valores dos parâmetros!')
         else:
             st.metric(label = f"{dfr['cuisines']}: {dfr['restaurant_name']}",
-                     value = f'{dfr['aggregate_rating']:.2f}/5',
+                     value = f"{dfr['aggregate_rating']:.2f}/5",
                      help = f"""País: {dfr['country_code']}\n
 Cidade: {dfr['city']}\n
 Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
@@ -199,7 +199,7 @@ Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
             st.markdown('#### Erro! Mude os valores dos parâmetros!')
         else:
             st.metric(label = f"{dfr['cuisines']}: {dfr['restaurant_name']}",
-                     value = f'{dfr['aggregate_rating']:.2f}/5',
+                     value = f"{dfr['aggregate_rating']:.2f}/5",
                      help = f"""País: {dfr['country_code']}\n
 Cidade: {dfr['city']}\n
 Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
@@ -213,7 +213,7 @@ Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
             st.markdown('#### Erro! Mude os valores dos parâmetros!')
         else:
             st.metric(label = f"{dfr['cuisines']}: {dfr['restaurant_name']}",
-                     value = f'{dfr['aggregate_rating']:.2f}/5',
+                     value = f"{dfr['aggregate_rating']:.2f}/5",
                      help = f"""País: {dfr['country_code']}\n
 Cidade: {dfr['city']}\n
 Preço pra dois: {dfr['average_cost_for_two']} {dfr['currency']}"""
