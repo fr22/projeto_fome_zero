@@ -170,7 +170,7 @@ with st.container():
     
     map = folium.Map()
     cluster = MarkerCluster().add_to(map)
-    for index, row in sample.iterrows():
+    for index, row in dfr.iterrows():
         popup_content = f"""
                         <b>{row['restaurant_name']}</b><br>
                         Preço para dois: {row['average_cost_for_two']} {row['currency']} <br>
