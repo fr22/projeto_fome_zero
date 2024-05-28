@@ -132,9 +132,11 @@ dfr = dfb.loc[filtro,:]
 
 # botao
 st.sidebar.markdown('### Dados tratados')
-def download(df):
-    return df.to_csv('dados_tratados.csv')
-st.sidebar.button(label = 'Download', key = download(dfb))
+def convert_df(df):
+    return df.to_csv().encode('utf-8')
+file = convert_df(dfb)
+st.sidebar.download_button(label = 'Download', data = file, mime = 'text/csv',
+                           file_name = 'dados_tratados.csv')
 #========================================
 # layout
 #========================================
@@ -165,7 +167,7 @@ with st.container():
         culinarias =  dfb.loc[:, 'cuisines'].nunique()
         st.metric(label = 'Tipos de culinária', value= culinarias)
 with st.container():
-    sample = dfr.sample(200)
+    
     map = folium.Map()
     cluster = MarkerCluster().add_to(map)
     for index, row in sample.iterrows():
